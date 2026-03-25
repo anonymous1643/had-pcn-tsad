@@ -32,7 +32,7 @@ Follow the steps below to set up and run the code:
 ### 1. Clone the repository
 
 ```
-git clone https://github.com/anonymous1643/Proactive-Anomaly-Forecasters.git
+git clone https://github.com/anonymous1643/had-pcn-tsad.git
 cd Proactive-Anomaly-Forecasters
 ```
 
