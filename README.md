@@ -1,10 +1,23 @@
-# Real-Time Proactive Anomaly Detection via Forward and Backward Forecast Modeling
+# Real-Time Proactive Anomaly Detection via Hierarchical Predictive Coding Networks
 
-Real-time anomaly detection is critical for preventing failures in high-stakes domains like industrial automation, financial systems, and satellite telemetry. Traditional anomaly detectors are reactive, they detect anomalies only after they’ve occurred. However, in many real-world applications, what’s needed is a proactive solution: one that can anticipate anomalies before they manifest.
+Real-time anomaly detection is critical in high-stakes domains such as industrial automation, financial systems, and satellite telemetry. Traditional anomaly detection methods are inherently **reactive**, identifying anomalies only after they occur. However, many real-world systems require proactive detection, where anomalies are anticipated before they fully manifest.
 
-This repository introduces two novel, real-time-capable frameworks for proactive anomaly detection:
-- **FFM (Forward Forecasting Model):** predicts future values using historical context
-- **BRM (Backward Reconstruction Model):** reconstructs past behavior using future context
+In this work, we introduce a unified framework for both reactive and proactive anomaly detection based on a **Hierarchical Amortized Dynamic Predictive Coding Network (HAD-PCN)**.
+
+---
+
+Our approach models time series data using a hierarchical dynamic generative model combined with hybrid amortized inference:
+
+- **Reactive Detection:** detects anomalies based on reconstruction likelihood of current observations.
+- **Proactive Detection:** anticipates anomalies by forecasting future observations and evaluating prediction uncertainty.
+
+The model integrates:
+- A **causal encoder** for amortized inference of latent states
+- A **latent transition model** capturing temporal dynamics
+- A **probabilistic decoder** for observation likelihood
+- **predictive coding refinement** for iterative latent optimization
+
+---
 
 ## Quick Start
 
